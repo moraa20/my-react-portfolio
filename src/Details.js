@@ -1,8 +1,3 @@
-// Enter all your detials in this file
-// Logo images
-import logogradient from "./assets/logo.svg";
-import logo from "./assets/logo2.svg";
-// Profile Image
 import profile from "./assets/profile.jpg";
 // Tech stack images
 import html from "./assets/techstack/html.png";
@@ -24,27 +19,21 @@ import projectImage1 from "./assets/projects/project1.jpg";
 import projectImage2 from "./assets/projects/project2.jpg";
 import projectImage3 from "./assets/projects/project3.jpg";
 import projectImage4 from "./assets/projects/project4.jpg";
-import projectImage5 from "./assets/projects/project5.jpg";
-import projectImage6 from "./assets/projects/project6.jpg";
-
-// Logos
-export const logos = {
-  logogradient: logogradient,
-  logo: logo,
-};
+//import projectImage5 from "./assets/projects/project5.jpg";
+//import projectImage6 from "./assets/projects/project6.jpg";
 
 // Enter your Personal Details here
 export const personalDetails = {
-  name: "Pavan MG",
-  tagline: "I build things for web",
+  name: "Sylviah.M",
+  tagline: "I build stuff for the  web everyday",
   img: profile,
-  about: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  about: `I’m a frontend engineer passionate about building modern web applications with React. I enjoy crafting smooth user experiences and writing clean, maintainable code that brings ideas to life on the web.`,
 };
 
 // Enter your Social Media URLs here
 export const socialMediaUrl = {
-  linkdein: "https://www.linkedin.com/",
-  github: "https://www.github.com/",
+  linkdein: "https://www.linkedin.com/in/sylvia-machira-9aa0882b3/",
+  github: "https://github.com/moraa20/",
   twitter: "https://twitter.com/",
   instagram: "https://www.instagram.com/",
 };
@@ -53,42 +42,42 @@ export const socialMediaUrl = {
 export const workDetails = [
   {
     Position: "Frontend Web Developer",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
+    Company: `Adanian Labs`,
+    Location: "Westlands",
     Type: "Full Time",
-    Duration: "Sep 2021 - Dec 2021",
+    Duration: "2024",
   },
   {
+    Position: "IT Support Engineer",
+    Company: `Kabete Polytechnic`,
+    Location: "Nairobi",
+    Type: "Internship",
+    Duration: "2025",
+  },
+  /*{
     Position: "Internship",
     Company: `Company Name here`,
     Location: "Bengaluru",
     Type: "Internship",
     Duration: "Sep 2021 - Dec 2021",
-  },
-  {
-    Position: "Internship",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Internship",
-    Duration: "Sep 2021 - Dec 2021",
-  },
+  },*/
 ];
 
 // Enter your Education Details here
 export const eduDetails = [
   {
     Position: "Frontend Development",
-    Company: "Udemy, YouTube, Google, Medium",
+    Company: "Udemy, YouTube, freeCodeCamp",
     Location: "Online",
     Type: "Full Time",
-    Duration: "Jan 2022 - Present",
+    Duration: "2021 - Present",
   },
   {
-    Position: "Bachelor in Electronics & Communication",
-    Company: `Your College Name here`,
-    Location: "Bengaluru",
+    Position: "Bachelor in Computer Science",
+    Company: `Meru University`,
+    Location: "Meru",
     Type: "Full Time",
-    Duration: "Aug 2020 - Present",
+    Duration: "2021 - 2025",
   },
 ];
 
@@ -115,40 +104,36 @@ export const projectDetails = [
   {
     title: "Project title 1",
     image: projectImage1,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    description: `I built a booking app with React where users can pick dates, make reservations, and see updates in real time.`,
+    techstack: "React,HTML,JavaScript,Tailwind CSS.",
+    previewLink: "https://escapevibes.vercel.app/",
+    githubLink: "https://github.com/moraa20/ESCAPEVIBES",
   },
   {
     title: "Project title 2",
     image: projectImage2,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    description: `I built a restaurant landing page with a responsive design, smooth navigation to showcase the menu, services, and special offers`,
+    techstack: "HTML/CSS,JavaScript,Bootstrap",
+    previewLink: "https://moraa20.github.io/VILLA/",
+    githubLink: "https://github.com/moraa20/VILLA",
   },
   {
     title: "Project title 3",
     image: projectImage3,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    description: `I built a movie app that lets users browse, search, and explore movies with details like ratings, genres, and summaries.`,
+    techstack: "HTML,JavaScript,Tailwind CSS",
     previewLink: "https://google.com",
     githubLink: "https://github.com",
   },
   {
     title: "Project title 4",
     image: projectImage4,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    description: `I built my personal portfolio to showcase my projects, skills, and experience as a frontend engineer.`,
+    techstack: "React,JavaScript,HTML,Tailwind CSS.",
     previewLink: "https://google.com",
     githubLink: "https://github.com",
   },
-  {
+ /* {
     title: "Project title 5",
     image: projectImage5,
     description: `This is sample project description random things are here in description This is sample
@@ -165,11 +150,11 @@ project lorem ipsum generator for dummy content`,
     techstack: "HTML/CSS, JavaScript",
     previewLink: "https://google.com",
     githubLink: "https://github.com",
-  },
+  }, */
 ];
 
 // Enter your Contact Details here
 export const contactDetails = {
-  email: "hi@example.com",
-  phone: "+91 12345 67890",
+  email: "moraasyl254@gmail.com",
+  phone: "+254792500665",
 };

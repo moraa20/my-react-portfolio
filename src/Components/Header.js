@@ -1,71 +1,62 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { logos, socialMediaUrl } from "../Details";
+import { socialMediaUrl } from "../Details";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const { linkdein, github, twitter } = socialMediaUrl;
+  const { linkdein, github } = socialMediaUrl;
   const toggleClass = () => {
     setIsOpen(!isOpen);
   };
 
   return (
     <header className="container mx-auto md:flex justify-between py-2 max-width">
+
       <div className="flex justify-between items-center py-2 md:py-10">
-        <NavLink to="/">
-          <img className="w-14" src={logos.logogradient} alt="logo" />
-        </NavLink>
-        <div onClick={toggleClass} className="cursor-pointer">
-          <svg
-            className="stroke-dark-heading dark:stroke-white md:hidden"
-            width="25"
-            height="20"
-            viewBox="0 0 16 13"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1.4375 1.3125H14.5625M1.4375 11.3125H14.5625H1.4375ZM1.4375 6.3125H14.5625H1.4375Z"
-              strokeWidth="1.875"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </div>
+        <h1 className="text-3xl font-bold text-pink-500">Sylviah</h1>
       </div>
+
       <nav className={` ${!isOpen ? "hidden" : null} text-center md:flex justify-between`}>
         <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
           <li className="pb-1 md:pb-0">
-            <NavLink to="/" onClick={toggleClass}>
+            <NavLink to="/" onClick={toggleClass} className={({ isActive }) =>
+              `transition duration-300 hover:text-pink-500 ${isActive ? "text-pink-500 font-semibold" : ""}`
+            }>
               Home
             </NavLink>
           </li>
           <li className="pb-1 md:pb-0">
-            <NavLink to="/about" onClick={toggleClass}>
+            <NavLink to="/about" onClick={toggleClass} className={({ isActive }) => `transition duration-300 hover:text-pink-500${isActive ? "text-pink-500 font-semi-bold" : ""}`}>
               About
             </NavLink>
           </li>
           <li className="pb-1 md:pb-0">
-            <NavLink to="/technologies" onClick={toggleClass}>
-              Technologies
+            <NavLink to="/technologies" onClick={toggleClass} className={({ isActive }) =>
+              `transition duration-300 hover:text-pink-500 ${isActive ? "text-pink-500 font-semibold" : ""}`
+            }>
+              Tech
             </NavLink>
           </li>
           <li className="pb-1 md:pb-0">
-            <NavLink to="/projects" onClick={toggleClass}>
+            <NavLink to="/projects" onClick={toggleClass} className={({ isActive }) =>
+              `transition duration-300 hover:text-pink-500 ${isActive ? "text-pink-500 font-semibold" : ""}`
+            }>
               Projects
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" onClick={toggleClass}>
+            <NavLink to="/contact" onClick={toggleClass} className={({ isActive }) =>
+              `transition duration-300 hover:text-pink-500 ${isActive ? "text-pink-500 font-semibold" : ""}`
+            }>
               Contact
             </NavLink>
           </li>
         </ul>
         <ul className="flex justify-evenly items-center my-5 md:my-0 md:space-x-5 md:mr-5">
-          <li>
-            <a href={twitter} target="_blank" rel="noreferrer noopener">
+          {/*<li>
+            <a href={instagram} target="_blank" rel="noreferrer noopener">
               <svg
-                className="dark:fill-light-heading fill-dark-heading"
+                className="dark:fill-light-heading fill-dark-heading hover:fill-pink-500 transition duration-300"
                 width="32"
                 height="32"
                 viewBox="0 0 32 32"
@@ -75,11 +66,11 @@ function Header() {
                 <path d="M16.875 1.875C8.59152 1.875 1.875 8.59152 1.875 16.875C1.875 25.1585 8.59152 31.875 16.875 31.875C25.1585 31.875 31.875 25.1585 31.875 16.875C31.875 8.59152 25.1585 1.875 16.875 1.875ZM24.0837 13.1819C24.0937 13.3393 24.0937 13.5033 24.0937 13.6641C24.0937 18.5792 20.3504 24.2411 13.51 24.2411C11.4007 24.2411 9.44531 23.6283 7.79799 22.5737C8.09933 22.6071 8.38728 22.6205 8.69531 22.6205C10.4364 22.6205 12.0368 22.0312 13.3125 21.0335C11.6786 21 10.3058 19.9286 9.83705 18.4554C10.4096 18.5391 10.9252 18.5391 11.5145 18.3884C10.6732 18.2175 9.91699 17.7605 9.37438 17.0953C8.83178 16.43 8.53623 15.5973 8.53795 14.7388V14.692C9.03013 14.9699 9.60938 15.1406 10.2154 15.1641C9.70595 14.8245 9.28814 14.3645 8.99903 13.8249C8.70993 13.2852 8.55845 12.6825 8.55804 12.0703C8.55804 11.3772 8.73884 10.7444 9.06362 10.1953C9.99744 11.3449 11.1627 12.2851 12.4837 12.9548C13.8047 13.6245 15.2518 14.0088 16.731 14.0826C16.2054 11.5547 18.0938 9.50893 20.3638 9.50893C21.4353 9.50893 22.3996 9.95759 23.0792 10.6808C23.9196 10.5234 24.7232 10.2087 25.4397 9.78683C25.1618 10.6473 24.5792 11.3739 23.8058 11.8326C24.5558 11.7522 25.279 11.5446 25.9487 11.2533C25.4431 11.9967 24.8103 12.6562 24.0837 13.1819Z" />
               </svg>
             </a>
-          </li>
+          </li>*/}
           <li>
             <a href={linkdein} target="_blank" rel="noreferrer noopener">
               <svg
-                className="dark:fill-light-heading fill-dark-heading"
+                className="dark:fill-light-heading fill-dark-heading hover:fill-pink-500 transition duration-300"
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"
@@ -93,7 +84,7 @@ function Header() {
           <li>
             <a href={github} target="_blank" rel="noreferrer noopener">
               <svg
-                className="dark:fill-light-heading fill-dark-heading"
+                className="dark:fill-light-heading fill-dark-heading hover:fill-pink-500 transition duration-300"
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"

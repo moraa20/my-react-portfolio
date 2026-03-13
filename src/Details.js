@@ -130,8 +130,8 @@ export const projectDetails = [
     image: projectImage4,
     description: `I built my personal portfolio to showcase my projects, skills, and experience as a frontend engineer.`,
     techstack: "React,JavaScript,HTML,Tailwind CSS.",
-    previewLink: "https://google.com",
-    githubLink: "https://moraa20.github.io/my-react-portfolio",
+    previewLink: "https://moraa20.github.io/my-react-portfolio",
+    githubLink: "https://google.com",
   },
  /* {
     title: "Project title 5",

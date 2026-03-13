@@ -123,15 +123,15 @@ export const projectDetails = [
     description: `I built a movie app that lets users browse, search, and explore movies with details like ratings, genres, and summaries.`,
     techstack: "HTML,JavaScript,Tailwind CSS",
     previewLink: "https://google.com",
-    githubLink: "https://github.com/moraa20/my-react-portfolio",
+    githubLink: "https://github.com",
   },
   {
     title: "Project title 4",
     image: projectImage4,
     description: `I built my personal portfolio to showcase my projects, skills, and experience as a frontend engineer.`,
     techstack: "React,JavaScript,HTML,Tailwind CSS.",
-    previewLink: "https://moraa20.github.io/my-react-portfolio",
-    githubLink: "https://google.com",
+    previewLink: "https://moraa20.github.io/my-react-portfolio/",
+    githubLink: "https://github.com",
   },
  /* {
     title: "Project title 5",

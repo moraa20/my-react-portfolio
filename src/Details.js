@@ -126,7 +126,7 @@ export const projectDetails = [
     githubLink: "https://github.com",
   },
   {
-    title: "Project title 4",
+    title: "MY PORTFOLIO",
     image: projectImage4,
     description: `I built my personal portfolio to showcase my projects, skills, and experience as a frontend engineer.`,
     techstack: "React,JavaScript,HTML,Tailwind CSS.",

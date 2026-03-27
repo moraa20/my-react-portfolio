@@ -102,7 +102,7 @@ export const techStackDetails = {
 // Enter your Project Details here
 export const projectDetails = [
   {
-    title: "Project title 1",
+    title: "BOOKING MANAGEMENT SYSTEM",
     image: projectImage1,
     description: `I built a booking app with React where users can pick dates, make reservations, and see updates in real time.`,
     techstack: "React,HTML,JavaScript,Tailwind CSS.",
@@ -110,7 +110,7 @@ export const projectDetails = [
     githubLink: "https://github.com/moraa20/ESCAPEVIBES",
   },
   {
-    title: "Project title 2",
+    title: "INTERACTIVE LANDING INTERFACE",
     image: projectImage2,
     description: `I built a restaurant landing page with a responsive design, smooth navigation to showcase the menu, services, and special offers`,
     techstack: "HTML/CSS,JavaScript,Bootstrap",
@@ -118,7 +118,7 @@ export const projectDetails = [
     githubLink: "https://github.com/moraa20/VILLA",
   },
   {
-    title: "Project title 3",
+    title: "DYNAMIC MOVIE DISCOVERY PLATFORM",
     image: projectImage3,
     description: `I built a movie app that lets users browse, search, and explore movies with details like ratings, genres, and summaries.`,
     techstack: "HTML,JavaScript,Tailwind CSS",

@@ -102,6 +102,14 @@ export const techStackDetails = {
 // Enter your Project Details here
 export const projectDetails = [
   {
+    title: "NOVAFLOW SAMPLE LANDING PAGE",
+    image: projectImage3,
+    description: `Imagine a modern app that helps people become more organized and productive using AI.`,
+    techstack: "React,HTML,JavaScript,Tailwind CSS.",
+    previewLink: "https://nova-landing-page-ruddy.vercel.app/",
+    githubLink: "https://github.com/moraa20/Nova-Landing-Page",
+  },
+  {
     title: "BOOKING MANAGEMENT SYSTEM",
     image: projectImage1,
     description: `I built a booking app with React where users can pick dates, make reservations, and see updates in real time.`,

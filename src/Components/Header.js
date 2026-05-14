@@ -34,37 +34,37 @@ function Header() {
         </div>
       </div>
 
-      <nav className={` ${!isOpen ? "block": "hidden" } text-center md:flex justify-between`}>
-        <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
+      <nav className={`${isOpen ? "block" : "hidden"} text-center md:flex justify-between bg-white dark:bg-gray-900 md:bg-transparent shadow-lg md:shadow-none rounded-b-2xl md:rounded-none px-6 py-4`}>
+        <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10 space-y-2 md:space-y-0">
           <li className="pb-1 md:pb-0">
             <NavLink to="/" onClick={toggleClass} className={({ isActive }) =>
-              `transition duration-300 hover:text-pink-500 ${isActive ? "text-pink-500 font-semibold" : ""}`
+              `block py-1 md:py-0 transition duration-300 hover:text-pink-500 ${isActive ? "text-pink-500 font-semibold" : "text-gray-800 dark:text-gray-200"}`
             }>
               Home
             </NavLink>
           </li>
           <li className="pb-1 md:pb-0">
-            <NavLink to="/about" onClick={toggleClass} className={({ isActive }) => `transition duration-300 hover:text-pink-500${isActive ? "text-pink-500 font-semi-bold" : ""}`}>
+            <NavLink to="/about" onClick={toggleClass} className={({ isActive }) => `block py-2 md:py-0 transition duration-300 hover:text-pink-500 ${isActive ? "text-pink-500 font-semi-bold" : "text-gray-800 dark:text-gray-200"}`}>
               About
             </NavLink>
           </li>
           <li className="pb-1 md:pb-0">
             <NavLink to="/technologies" onClick={toggleClass} className={({ isActive }) =>
-              `transition duration-300 hover:text-pink-500 ${isActive ? "text-pink-500 font-semibold" : ""}`
+              `block py-1 md:py-0 transition duration-300 hover:text-pink-500 ${isActive ? "text-pink-500 font-semibold" : "text-gray-800 dark:text-gray-200"}`
             }>
               Tech
             </NavLink>
           </li>
           <li className="pb-1 md:pb-0">
             <NavLink to="/projects" onClick={toggleClass} className={({ isActive }) =>
-              `transition duration-300 hover:text-pink-500 ${isActive ? "text-pink-500 font-semibold" : ""}`
+              `block py-1 md:py-0 transition duration-300 hover:text-pink-500 ${isActive ? "text-pink-500 font-semibold" : "text-gray-800 dark:text-gray-200"}`
             }>
               Projects
             </NavLink>
           </li>
           <li>
             <NavLink to="/contact" onClick={toggleClass} className={({ isActive }) =>
-              `transition duration-300 hover:text-pink-500 ${isActive ? "text-pink-500 font-semibold" : ""}`
+              `block py-1 md:py-0 transition duration-300 hover:text-pink-500 ${isActive ? "text-pink-500 font-semibold" : "text-gray-800 dark:text-gray-200"}`
             }>
               Contact
             </NavLink>

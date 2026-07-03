@@ -101,6 +101,14 @@ export const techStackDetails = {
 
 // Enter your Project Details here
 export const projectDetails = [
+   {
+    title: "PLANET GARDEN",
+    image: projectImage1,
+    description: `A modern, responsive resort website showcasing luxury accommodation, nature inspired design, and a seamless user experience with elegant UI and smooth navigation.`,
+    techstack: "React,Vite,TypeScript,JavaScript,HTML,CSS.",
+    previewLink: "https://planetgarden.netlify.app/",
+    githubLink: "https://github.com/moraa20/The-Planet-Garden",
+  },
   {
     title: "NOVAFLOW SAMPLE LANDING PAGE",
     image: projectImage3,

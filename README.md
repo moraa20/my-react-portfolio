@@ -1,3 +1,6 @@
+##Live Priview
+https://gagasly.netlify.app/
+
 # My React + Tailwind App
 
 **A modern, responsive React application styled entirely with Tailwind CSS.**  
